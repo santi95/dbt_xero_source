@@ -99,6 +99,9 @@ sources:
           - name: url
             description: URL link to a source document
 
+      - name: invoice_line_item_has_tracking_category
+        description: Each record in this table represents an invoice in Xero.
+
       - name: journal_line
         description: Each record represents a journal line in Xero.
         columns:
@@ -145,6 +148,9 @@ sources:
           - name: source_type
             description: The journal source type. This can be used to know which table to join to for additional information.
 
+      - name: journal_line_has_tracking_category
+        description: Each record represents a journal in Xero
+
       - name: organization
         description: Each record represents an organization in Xero.
         columns:
@@ -163,6 +169,9 @@ sources:
           - name: contact_id
             description: The ID of the associated contact in Xero
             
+      - name: bank_transaction_line_item_has_tracking_category
+        description: Each record represents a bank transaction in Xero.
+
       - name: credit_note
         description: Each record represents a credit note in Xero.
         columns:
@@ -170,3 +179,6 @@ sources:
             description: Xero identifier for the credit note.
           - name: contact_id
             description: The ID of the associated contact in Xero
+
+      - name: credit_note_line_item_has_tracking_category
+        description: Each record represents a credit note in Xero.
