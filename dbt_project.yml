@@ -14,6 +14,7 @@ vars:
     invoice_line_item_has_tracking_category: "{{ source('xero','invoice_line_item_has_tracking_category') }}"
     contact: "{{ source('xero','contact') }}"
     organization: "{{ source('xero','organization') }}"
+    bank_transfer: "{{ source('xero','bank_transfer') }}"
     bank_transaction: "{{ source('xero','bank_transaction') }}"
     bank_transaction_line_item_has_tracking_category: "{{ source('xero','bank_transaction_line_item_has_tracking_category') }}"
     credit_note: "{{ source('xero','credit_note') }}"
