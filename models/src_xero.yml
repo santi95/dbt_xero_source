@@ -173,7 +173,10 @@ sources:
         description: Each record represents a bank transaction in Xero.
 
       - name: bank_transfer
-        description: Each record represents a bank transaction in Xero.
+        description: Each record represents a bank transfer in Xero.
+
+      - name: payment
+        description: Each record represents a payment in Xero.
 
       - name: credit_note
         description: Each record represents a credit note in Xero.

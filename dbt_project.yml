@@ -19,6 +19,7 @@ vars:
     bank_transaction_line_item_has_tracking_category: "{{ source('xero','bank_transaction_line_item_has_tracking_category') }}"
     credit_note: "{{ source('xero','credit_note') }}"
     credit_note_line_item_has_tracking_category: "{{ source('xero','credit_note_line_item_has_tracking_category') }}"
+    payment: "{{ source('xero','payment') }}"
 
 models:
   xero_source:

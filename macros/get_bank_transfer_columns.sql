@@ -1,4 +1,4 @@
-{% macro get_bank_transfers_columns() %}
+{% macro get_bank_transfer_columns() %}
 
 {% set columns = [
     { "name": "bank_transfer_id", "datatype": dbt_utils.type_string() },
