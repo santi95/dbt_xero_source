@@ -24,14 +24,18 @@ final as (
     
     select 
         payment_id,
+        account_id,
         currency_rate,
-        invoice_id,
         date,
         status,
         amount,
-        account_id,
+        bank_amount,
         credit_note_id,
-        bank_amount
+        batch_payment_id,
+        expense_claim_id,
+        invoice_id,
+        overpayment_id,
+        prepayment_id
 
         {{ fivetran_utils.source_relation() }}
 

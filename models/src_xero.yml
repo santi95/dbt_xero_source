@@ -177,6 +177,24 @@ sources:
 
       - name: payment
         description: Each record represents a payment in Xero.
+      
+      - name: overpayment
+        description: Each record represents a overpayment in Xero.
+      
+      - name: overpayment_line_item
+        description: Each record represents a overpayment in Xero.
+      
+      - name: overpayment_line_item_has_tracking_category
+        description: Each record represents a overpayment in Xero.
+
+      - name: manual_journal
+        description: Each record represents a overpayment in Xero.
+      
+      - name: manual_journal_line
+        description: Each record represents a overpayment in Xero.
+      
+      - name: manual_journal_line_has_tracking_category
+        description: Each record represents a overpayment in Xero.
 
       - name: credit_note
         description: Each record represents a credit note in Xero.

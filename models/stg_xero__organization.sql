@@ -25,7 +25,8 @@ final as (
     select 
         organisation_id,
         financial_year_end_month,
-        financial_year_end_day
+        financial_year_end_day,
+        base_currency
 
         {{ fivetran_utils.source_relation() }}
         
