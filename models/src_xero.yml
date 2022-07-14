@@ -206,3 +206,13 @@ sources:
 
       - name: credit_note_line_item_has_tracking_category
         description: Each record represents a credit note in Xero.
+
+      - name: tracking_category
+        description: Each record represents a tracking category in Xero.
+      
+      - name: tracking_category_has_option
+        description: Each record represents the relationship between tracking category and option in Xero.
+
+      - name: tracking_category_option
+        description: Each record represents an option in Xero.
+      

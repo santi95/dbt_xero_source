@@ -26,6 +26,9 @@ vars:
     manual_journal: "{{ source('xero','manual_journal') }}"
     manual_journal_line: "{{ source('xero','manual_journal_line') }}"
     manual_journal_line_has_tracking_category: "{{ source('xero','manual_journal_line_has_tracking_category') }}"
+    tracking_category: "{{ source('xero','tracking_category') }}"
+    tracking_category_has_option: "{{ source('xero','tracking_category_has_option') }}"
+    tracking_category_option: "{{ source('xero','tracking_category_option') }}"
     
 models:
   xero_source:
