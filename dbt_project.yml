@@ -20,7 +20,7 @@ vars:
     credit_note: "{{ source('xero','credit_note') }}"
     credit_note_line_item_has_tracking_category: "{{ source('xero','credit_note_line_item_has_tracking_category') }}"
     payment: "{{ source('xero','payment') }}"    
-    overpayment: "{{ source('xero','payment') }}"
+    overpayment: "{{ source('xero','overpayment') }}"
     overpayment_line_item: "{{ source('xero','overpayment_line_item') }}"
     overpayment_line_item_has_tracking_category: "{{ source('xero','overpayment_line_item_has_tracking_category') }}"
     manual_journal: "{{ source('xero','manual_journal') }}"
