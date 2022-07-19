@@ -14,11 +14,22 @@ vars:
     invoice_line_item_has_tracking_category: "{{ source('xero','invoice_line_item_has_tracking_category') }}"
     contact: "{{ source('xero','contact') }}"
     organization: "{{ source('xero','organization') }}"
+    bank_transfer: "{{ source('xero','bank_transfer') }}"
     bank_transaction: "{{ source('xero','bank_transaction') }}"
     bank_transaction_line_item_has_tracking_category: "{{ source('xero','bank_transaction_line_item_has_tracking_category') }}"
     credit_note: "{{ source('xero','credit_note') }}"
     credit_note_line_item_has_tracking_category: "{{ source('xero','credit_note_line_item_has_tracking_category') }}"
-
+    payment: "{{ source('xero','payment') }}"    
+    overpayment: "{{ source('xero','overpayment') }}"
+    overpayment_line_item: "{{ source('xero','overpayment_line_item') }}"
+    overpayment_line_item_has_tracking_category: "{{ source('xero','overpayment_line_item_has_tracking_category') }}"
+    manual_journal: "{{ source('xero','manual_journal') }}"
+    manual_journal_line: "{{ source('xero','manual_journal_line') }}"
+    manual_journal_line_has_tracking_category: "{{ source('xero','manual_journal_line_has_tracking_category') }}"
+    tracking_category: "{{ source('xero','tracking_category') }}"
+    tracking_category_has_option: "{{ source('xero','tracking_category_has_option') }}"
+    tracking_category_option: "{{ source('xero','tracking_category_option') }}"
+    
 models:
   xero_source:
     +materialized: table

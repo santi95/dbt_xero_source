@@ -28,7 +28,8 @@ final as (
         code as account_code,
         type as account_type,
         class as account_class,
-        _fivetran_synced
+        description,
+        currency_code
 
         {{ fivetran_utils.source_relation() }}
 

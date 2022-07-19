@@ -172,6 +172,30 @@ sources:
       - name: bank_transaction_line_item_has_tracking_category
         description: Each record represents a bank transaction in Xero.
 
+      - name: bank_transfer
+        description: Each record represents a bank transfer in Xero.
+
+      - name: payment
+        description: Each record represents a payment in Xero.
+      
+      - name: overpayment
+        description: Each record represents a overpayment in Xero.
+      
+      - name: overpayment_line_item
+        description: Each record represents a overpayment in Xero.
+      
+      - name: overpayment_line_item_has_tracking_category
+        description: Each record represents a overpayment in Xero.
+
+      - name: manual_journal
+        description: Each record represents a overpayment in Xero.
+      
+      - name: manual_journal_line
+        description: Each record represents a overpayment in Xero.
+      
+      - name: manual_journal_line_has_tracking_category
+        description: Each record represents a overpayment in Xero.
+
       - name: credit_note
         description: Each record represents a credit note in Xero.
         columns:
@@ -182,3 +206,13 @@ sources:
 
       - name: credit_note_line_item_has_tracking_category
         description: Each record represents a credit note in Xero.
+
+      - name: tracking_category
+        description: Each record represents a tracking category in Xero.
+      
+      - name: tracking_category_has_option
+        description: Each record represents the relationship between tracking category and option in Xero.
+
+      - name: tracking_category_option
+        description: Each record represents an option in Xero.
+      

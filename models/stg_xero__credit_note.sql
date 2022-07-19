@@ -25,7 +25,12 @@ final as (
     
     select 
         credit_note_id,
-        contact_id
+        contact_id,
+        currency_code,
+        currency_rate,
+        sub_total,
+        total,
+        total_tax
 
         {{ fivetran_utils.source_relation() }}
         

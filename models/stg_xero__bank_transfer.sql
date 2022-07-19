@@ -3,7 +3,7 @@
 with base as (
 
     select * 
-    from {{ ref('stg_xero__bank_transaction_tmp') }}
+    from {{ ref('stg_xero__bank_transfer_tmp') }}
 
 ),
 
@@ -12,8 +12,8 @@ fields as (
     select
         {{
             fivetran_utils.fill_staging_columns(
-                source_columns=adapter.get_columns_in_relation(ref('stg_xero__bank_transaction_tmp')),
-                staging_columns=get_bank_transaction_columns()
+                source_columns=adapter.get_columns_in_relation(ref('stg_xero__bank_transfer_tmp')),
+                staging_columns=get_bank_transfer_columns()
             )
         }}
 
@@ -24,15 +24,15 @@ fields as (
 final as (
     
     select 
-        bank_transaction_id,
-        contact_id,
-        currency_code,
+        bank_transfer_id,
+        amount,
         currency_rate,
         date,
-        sub_total,
-        total,
-        total_tax,
-        type
+        from_bank_account_id,
+        from_bank_transaction_id,
+        has_attachments,
+        to_bank_account_id,
+        to_bank_transaction_id
 
         {{ fivetran_utils.source_relation() }}
 
