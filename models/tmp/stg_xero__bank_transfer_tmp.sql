@@ -1,4 +1,4 @@
-{{ config(enabled=var('xero__using_bank_transaction', True)) }}
+{{ config(enabled=var('xero__using_bank_transfer', False)) }}
 
 {{
     fivetran_utils.union_data(

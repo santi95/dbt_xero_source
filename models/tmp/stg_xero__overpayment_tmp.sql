@@ -1,4 +1,4 @@
-{{ config(enabled=var('xero__using_overpayment', True)) }}
+{{ config(enabled=var('xero__using_overpayment', False)) }}
 
 {{
     fivetran_utils.union_data(
