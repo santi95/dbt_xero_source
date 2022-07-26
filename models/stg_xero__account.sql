@@ -28,6 +28,8 @@ final as (
         code as account_code,
         type as account_type,
         class as account_class,
+        system_account as account_system_account,
+        status as account_status,
         description,
         currency_code
 
